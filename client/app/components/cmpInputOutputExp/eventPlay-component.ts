@@ -17,7 +17,7 @@ import { ObservableWrapper } from 'angular2/src/core/facade/async'
   }
 })
 @View({
-  templateUrl: 'app/components/componentInputOutputExp/eventPlay-component.html'
+  templateUrl: 'app/components/cmpInputOutputExp/eventPlay-component.html'
 })
 export class EventPlayComponent {
   constructor () {

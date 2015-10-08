@@ -5,10 +5,10 @@ import { EventPlayComponent } from './eventPlay-component'
   selector: 'input-output'
 })
 @View({
-  templateUrl: 'app/components/componentInputOutputExp/componentInputOutputExp-component.html',
+  templateUrl: 'app/components/cmpInputOutputExp/cmpInputOutputExp-component.html',
   directives: [EventPlayComponent]
 })
-export class ComponentInputOutputExpComponent {
+export class CmpInputOutputExpComponent {
 
   constructor() {
     // Send this data to child

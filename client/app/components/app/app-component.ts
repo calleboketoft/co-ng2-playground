@@ -2,7 +2,8 @@ import { Component, View } from 'angular2/angular2'
 import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router'
 import { HttpExpComponent } from '../httpExp/httpExp-component'
 import { RouterHooksExpComponent } from '../routerHooksExp/routerHooksExp-component'
-import { ComponentInputOutputExpComponent } from '../componentInputOutputExp/componentInputOutputExp-component'
+import { CmpInputOutputExpComponent } from '../cmpInputOutputExp/cmpInputOutputExp-component'
+import { CmpLifeCycleExpComponent } from '../cmpLifeCycleExp/cmpLifeCycleExp-component'
 
 @Component({
   selector: 'app'
@@ -23,9 +24,14 @@ import { ComponentInputOutputExpComponent } from '../componentInputOutputExp/com
     component: RouterHooksExpComponent
   },
   {
-    path: '/componentInputOutputExp',
-    as: 'ComponentInputOutputExp',
-    component: ComponentInputOutputExpComponent
+    path: '/cmpInputOutputExp',
+    as: 'CmpInputOutputExp',
+    component: CmpInputOutputExpComponent
+  },
+  {
+    path: '/cmpLifeCycleExp',
+    as: 'CmpLifeCycleExp',
+    component: CmpLifeCycleExpComponent
   }
 ])
 export class AppComponent { }
