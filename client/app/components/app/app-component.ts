@@ -4,6 +4,7 @@ import { HttpExpComponent } from '../httpExp/httpExp-component'
 import { RouterHooksExpComponent } from '../routerHooksExp/routerHooksExp-component'
 import { CmpInputOutputExpComponent } from '../cmpInputOutputExp/cmpInputOutputExp-component'
 import { CmpLifeCycleExpComponent } from '../cmpLifeCycleExp/cmpLifeCycleExp-component'
+import { FormsExpComponent } from '../formsExp/formsExp-component'
 
 @Component({
   selector: 'app'
@@ -32,6 +33,11 @@ import { CmpLifeCycleExpComponent } from '../cmpLifeCycleExp/cmpLifeCycleExp-com
     path: '/cmpLifeCycleExp',
     as: 'CmpLifeCycleExp',
     component: CmpLifeCycleExpComponent
+  },
+  {
+    path: '/formsExp',
+    as: 'FormsExp',
+    component: FormsExpComponent
   }
 ])
 export class AppComponent { }
