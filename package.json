@@ -4,10 +4,12 @@
   "author": "Carl-Ola Boketoft",
   "main": "server/server.js",
   "scripts": {
+    "postinstall": "./node_modules/.bin/jspm install && ./node_modules/.bin/gulp sass"
   },
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "jspm": "^0.16.11",
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
@@ -18,5 +20,24 @@
     "type": "",
     "url": ""
   },
-  "description": "ng2-playground"
+  "description": "ng2-playground",
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.2",
+      "angular2": "npm:angular2@^2.0.0-alpha.39",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "zone.js": "npm:zone.js@^0.5.8"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "devDependencies": {
+    "bootstrap": "git+https://git@github.com/twbs/bootstrap.git#v4.0.0-alpha",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
 }
