@@ -6,6 +6,7 @@ import { CmpInputOutputExpComponent } from '../cmpInputOutputExp/cmpInputOutputE
 import { CmpLifeCycleExpComponent } from '../cmpLifeCycleExp/cmpLifeCycleExp-component'
 import { FormsExpComponent } from '../formsExp/formsExp-component'
 import { ZippyAppComponent } from '../zippyApp/zippyApp-component'
+import { ChildRouterExpComponent } from '../childRouterExp/childRouterExp-component'
 
 @Component({
   selector: 'app'
@@ -44,6 +45,11 @@ import { ZippyAppComponent } from '../zippyApp/zippyApp-component'
     path: '/zippyApp',
     as: 'ZippyApp',
     component: ZippyAppComponent
+  },
+  {
+    path: '/childRouterExp/...',
+    as: 'ChildRouterExp',
+    component: ChildRouterExpComponent
   }
 ])
 export class AppComponent { }
