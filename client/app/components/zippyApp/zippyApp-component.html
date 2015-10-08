@@ -1,0 +1,9 @@
+<h3>Zippy App</h3>
+<a href="http://blog.thoughtram.io/angular/2015/03/27/building-a-zippy-component-in-angular-2.html">http://blog.thoughtram.io/angular/2015/03/27/building-a-zippy-component-in-angular-2.html</a>
+
+<zippy (open)="pushLog('open')" (close)="pushLog('close')" title="Details">
+  This is some content.
+</zippy>
+<ul>
+  <li *ng-for="var log of logs">{{log}}</li>
+</ul>

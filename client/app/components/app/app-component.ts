@@ -5,6 +5,7 @@ import { RouterHooksExpComponent } from '../routerHooksExp/routerHooksExp-compon
 import { CmpInputOutputExpComponent } from '../cmpInputOutputExp/cmpInputOutputExp-component'
 import { CmpLifeCycleExpComponent } from '../cmpLifeCycleExp/cmpLifeCycleExp-component'
 import { FormsExpComponent } from '../formsExp/formsExp-component'
+import { ZippyAppComponent } from '../zippyApp/zippyApp-component'
 
 @Component({
   selector: 'app'
@@ -38,6 +39,11 @@ import { FormsExpComponent } from '../formsExp/formsExp-component'
     path: '/formsExp',
     as: 'FormsExp',
     component: FormsExpComponent
+  },
+  {
+    path: '/zippyApp',
+    as: 'ZippyApp',
+    component: ZippyAppComponent
   }
 ])
 export class AppComponent { }
