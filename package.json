@@ -1,0 +1,22 @@
+{
+  "name": "ng2-playground",
+  "version": "1.0.0",
+  "author": "Carl-Ola Boketoft",
+  "main": "server/server.js",
+  "scripts": {
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "ng2-playground"
+}
