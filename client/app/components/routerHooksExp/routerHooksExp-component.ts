@@ -1,5 +1,10 @@
-import { Component, View } from 'angular2/angular2'
+import { Component, View, Injector } from 'angular2/angular2'
 import { CanActivate, CanDeactivate, OnActivate, OnDeactivate } from 'angular2/router'
+import { SessionService } from './SessionService'
+
+function getSessionServiceInstance() {
+  return Injector.resolveAndCreate([SessionService]).get(SessionService)
+}
 
 @Component({
   selector: 'router-hooks'
@@ -8,7 +13,23 @@ import { CanActivate, CanDeactivate, OnActivate, OnDeactivate } from 'angular2/r
   template: '<h3>Router Hooks Experiment</h3>'
 })
 @CanActivate(() => {
-  return confirm('can activate?')
+  // DI in here: https://github.com/angular/angular/issues/4112
+  // Hack to make it work for now:
+  let sessionService = getSessionServiceInstance()
+  return new Promise ((resolve, reject) => {
+    if (sessionService.getUser()) {
+      console.log('user data in place, login alright')
+      resolve(sessionService.getUser())
+    } else {
+      console.log('user data not in place, fetch it first')
+      if (confirm('user data fetching success?')) {
+        sessionService.setUser('calle')
+        resolve(sessionService.getUser())
+      } else {
+        reject('no!')
+      }
+    }
+  })
 })
 export class RouterHooksExpComponent implements CanDeactivate, OnActivate, OnDeactivate {
   canDeactivate (next, prev) {
