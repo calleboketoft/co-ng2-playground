@@ -1,7 +1,26 @@
 <h3>Child Router Experiment</h3>
+Navigate by [router-link]:
 <a [router-link]="['/ChildRouterExp/Dumdum']">Dumdum</a>
 |
 <a [router-link]="['/ChildRouterExp/Baby']">Baby</a>
+<br><br>
+
+Navigate by router.navigate():
+<button class="btn btn-primary btn-xs" (click)="goByNavigate('dumdum')">
+  Dumdum
+</button>
+<button class="btn btn-primary btn-xs" (click)="goByNavigate('baby')">
+  Baby
+</button>
+<br><br>
+
+Navigate by router.navigateByUrl():
+<button class="btn btn-primary btn-xs" (click)="goByNavigateByUrl('dumdum')">
+  Dumdum
+</button>
+<button class="btn btn-primary btn-xs" (click)="goByNavigateByUrl('baby')">
+  Baby
+</button>
 <br><br>
 
 <router-outlet></router-outlet>

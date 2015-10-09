@@ -1,5 +1,5 @@
-import { Component, View } from 'angular2/angular2'
-import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router'
+import { Component, View, Inject } from 'angular2/angular2'
+import { ROUTER_DIRECTIVES, RouteConfig, Router } from 'angular2/router'
 
 import { DumdumComponent } from './dumdum/dumdum-component'
 import { BabyComponent } from './baby/baby-component'
@@ -23,4 +23,22 @@ import { BabyComponent } from './baby/baby-component'
     component: BabyComponent
   }
 ])
-export class ChildRouterExpComponent {}
+export class ChildRouterExpComponent {
+  constructor (@Inject(Router) router: Router) {
+    this.router = router
+  }
+
+  goByNavigate (place) {
+    if (place === 'dumdum') {
+      // Routing relatively to current page
+      this.router.navigate(['./Dumdum'])
+    } else if (place === 'baby') {
+      // Routing absolute component chain
+      this.router.navigate(['/ChildRouterExp/Baby'])
+    }
+  }
+
+  goByNavigateByUrl (place) {
+    this.router.navigateByUrl(['childRouterExp/' + place])
+  }
+}
