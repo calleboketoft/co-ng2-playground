@@ -8,6 +8,7 @@ import { FormsExpComponent } from '../formsExp/formsExp-component'
 import { ZippyAppComponent } from '../zippyApp/zippyApp-component'
 import { ChildRouterExpComponent } from '../childRouterExp/childRouterExp-component'
 import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-component'
+import { FormToolsComponent } from '../formTools/formTools-component'
 
 @Component({
   selector: 'app'
@@ -56,6 +57,11 @@ import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-
     path: '/serviceInjection',
     as: 'ServiceInjection',
     component: ServiceInjectionComponent
+  },
+  {
+    path: '/formTools',
+    as: 'FormTools',
+    component: FormToolsComponent
   }
 ])
 export class AppComponent { }
