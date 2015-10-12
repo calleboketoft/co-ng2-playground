@@ -1,4 +1,4 @@
 <input class="form-control" (keyup)="typing($event)" style="width: 150px;">
-<div *ng-for="#tag of tags">
-  <p (click)="removeTag(tag)" style="cursor: pointer;">{{tag}}</p>
-</div>
+<span class="label label-info" style="margin-right: 5px;" *ng-for="#tag of tags">
+  <span (click)="removeTag(tag)" style="cursor: pointer;">{{tag}}</span>
+</span>
