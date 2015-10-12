@@ -2,7 +2,7 @@ import { Component, NgFor } from 'angular2/angular2'
 
 @Component({
   selector: 'co-tags',
-  templateUrl: 'app/components/formTools//coTags/coTags-component.html',
+  templateUrl: 'app/components/formTools/coTags/coTags-component.html',
   inputs: ['tags'],
   directives: [NgFor]
 })
@@ -17,6 +17,7 @@ export class CoTagsComponent {
   typing ($event) {
     if ($event.keyCode === 13) {
       this.addTag($event.target.value)
+      $event.target.value = ''
     }
   }
 
