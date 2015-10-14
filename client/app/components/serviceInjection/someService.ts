@@ -1,12 +1,14 @@
 import { Injectable } from 'angular2/core'
 import { Http } from 'angular2/http'
 import esmSingleton from './esmSingleton'
+import { RecursiveService } from './RecursiveService'
 
 @Injectable()
 export class SomeService {
-  constructor (http:Http) {
+  constructor (http:Http, recursiveService:RecursiveService) {
     console.log('SomeService started, note that this is not a singleton')
     console.log(http)
+    console.log(recursiveService.something)
     this.myValue = 'Calle'
     if (esmSingleton.singletonDataHere) {
       console.log('esmSingleton has already been initialized: ', esmSingleton.singletonDataHere)
