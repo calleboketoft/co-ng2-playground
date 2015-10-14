@@ -1,4 +1,4 @@
-import { Component, Inject } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 import { SomeService } from 'app/components/serviceInjection/SomeService'
 
 @Component({
@@ -7,7 +7,7 @@ import { SomeService } from 'app/components/serviceInjection/SomeService'
   template: '<h3>Service DI</h3>'
 })
 export class ServiceInjectionComponent {
-  constructor (@Inject(SomeService) someService: SomeService) {
+  constructor (someService: SomeService) {
     console.log ('Service Dependency Injection Component Init')
     console.log('Using SomeService: ', someService.myValue)
   }

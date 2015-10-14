@@ -1,4 +1,4 @@
-import { Component, View, EventEmitter } from 'angular2/angular2'
+import { Component, EventEmitter } from 'angular2/angular2'
 import { ObservableWrapper } from 'angular2/src/core/facade/async'
 
 @Component({
@@ -14,9 +14,7 @@ import { ObservableWrapper } from 'angular2/src/core/facade/async'
   ],
   host: {
     '(mouseover)': 'reactOnHostMouseover()'
-  }
-})
-@View({
+  },
   templateUrl: 'app/components/cmpInputOutputExp/eventPlay-component.html'
 })
 export class EventPlayComponent {

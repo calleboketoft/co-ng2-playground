@@ -1,8 +1,8 @@
-import { Component, View, NgFor } from 'angular2/core'
+import { Component, NgFor } from 'angular2/core'
 import { ZippyComponent } from './zippy-component'
 
-@Component({ selector: 'zippy-app' })
-@View({
+@Component({
+  selector: 'zippy-app',
   templateUrl: 'app/components/zippyApp/zippyApp-component.html',
   directives: [ZippyComponent, NgFor]
 })

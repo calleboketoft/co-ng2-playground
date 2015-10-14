@@ -1,4 +1,4 @@
-import { Component, View } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router'
 import { HttpExpComponent } from '../httpExp/httpExp-component'
 import { RouterHooksExpComponent } from '../routerHooksExp/routerHooksExp-component'
@@ -11,9 +11,7 @@ import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-
 import { FormToolsComponent } from '../formTools/formTools-component'
 
 @Component({
-  selector: 'app'
-})
-@View({
+  selector: 'app',
   templateUrl: 'app/components/app/app-component.html',
   directives: [ROUTER_DIRECTIVES]
 })

@@ -1,13 +1,11 @@
-import { Component, View, Inject } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 import { ROUTER_DIRECTIVES, RouteConfig, Router } from 'angular2/router'
 
 import { DumdumComponent } from './dumdum/dumdum-component'
 import { BabyComponent } from './baby/baby-component'
 
 @Component({
-  selector: 'child-router-exp'
-})
-@View({
+  selector: 'child-router-exp',
   templateUrl: 'app/components/childRouterExp/childRouterExp-component.html',
   directives: [ROUTER_DIRECTIVES]
 })
@@ -24,7 +22,7 @@ import { BabyComponent } from './baby/baby-component'
   }
 ])
 export class ChildRouterExpComponent {
-  constructor (@Inject(Router) router: Router) {
+  constructor (router: Router) {
     this.router = router
   }
 

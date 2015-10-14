@@ -1,10 +1,8 @@
-import { Component, View } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 import { EventPlayComponent } from './eventPlay-component'
 
 @Component({
-  selector: 'input-output'
-})
-@View({
+  selector: 'input-output',
   templateUrl: 'app/components/cmpInputOutputExp/cmpInputOutputExp-component.html',
   directives: [EventPlayComponent]
 })

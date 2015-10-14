@@ -1,4 +1,4 @@
-import { Component, View, Injector } from 'angular2/angular2'
+import { Component, Injector } from 'angular2/angular2'
 import { CanActivate, CanDeactivate, OnActivate, OnDeactivate } from 'angular2/router'
 import { SessionService } from './SessionService'
 
@@ -7,9 +7,7 @@ function getSessionServiceInstance() {
 }
 
 @Component({
-  selector: 'router-hooks'
-})
-@View({
+  selector: 'router-hooks',
   template: '<h3>Router Hooks Experiment</h3>'
 })
 @CanActivate(() => {

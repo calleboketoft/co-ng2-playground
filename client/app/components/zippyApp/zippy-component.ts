@@ -1,4 +1,4 @@
-import { Component, View, EventEmitter } from 'angular2/angular2'
+import { Component, EventEmitter } from 'angular2/angular2'
 import { ObservableWrapper } from 'angular2/src/core/facade/async'
 
 @Component({
@@ -7,9 +7,7 @@ import { ObservableWrapper } from 'angular2/src/core/facade/async'
   outputs: [
     'openHandler: open',
     'closeHandler: close'
-  ]
-})
-@View({
+  ],
   templateUrl: 'app/components/zippyApp/zippy-component.html'
 })
 export class ZippyComponent {

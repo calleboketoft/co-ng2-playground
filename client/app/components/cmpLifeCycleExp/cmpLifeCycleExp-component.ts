@@ -1,9 +1,7 @@
-import { Component, View } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 
 @Component({
-  selector: 'cmp-life-cycle'
-})
-@View({
+  selector: 'cmp-life-cycle',
   template: '<h3>Component Life Cycle Experiment</h3>'
 })
 export class CmpLifeCycleExpComponent {

@@ -1,6 +1,5 @@
 import {
   Component,
-  View,
   CORE_DIRECTIVES,
   FORM_DIRECTIVES,
   FormBuilder,
@@ -11,9 +10,7 @@ import {
 } from 'angular2/angular2'
 
 @Component({
-  selector: 'model-driven-form'
-})
-@View({
+  selector: 'model-driven-form',
   templateUrl: 'app/components/formsExp/modelDrivenForm/modelDrivenForm-component.html',
   directives: [FORM_DIRECTIVES, CORE_DIRECTIVES]
 })
@@ -24,7 +21,7 @@ export class ModelDrivenFormComponent {
   // individually instantiated control
   name: Control = new Control('', Validators.required)
 
-  constructor (@Inject(FormBuilder) formBuilder: FormBuilder) {
+  constructor (formBuilder: FormBuilder) {
     this.form = formBuilder.group({
       'name': this.name,
       // simplified instatiation of control

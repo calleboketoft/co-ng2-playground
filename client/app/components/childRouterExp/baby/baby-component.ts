@@ -1,9 +1,7 @@
-import { Component, View } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 
 @Component({
-  selector: 'baby'
-})
-@View({
+  selector: 'baby',
   template: '<p>Gagagagaga!</p>'
 })
 export class BabyComponent {}

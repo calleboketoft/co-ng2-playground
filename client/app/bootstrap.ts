@@ -1,13 +1,13 @@
 import 'reflect-metadata'
 import 'zone.js'
 import { bind, bootstrap } from 'angular2/angular2';
-import { routerBindings, LocationStrategy, HashLocationStrategy } from 'angular2/router'
-import { HTTP_BINDINGS } from 'angular2/http'
+import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from 'angular2/router'
+import { HTTP_PROVIDERS } from 'angular2/http'
 
 import { AppComponent } from 'app/components/app/app-component'
 
 bootstrap(AppComponent, [
-  HTTP_BINDINGS,
-  routerBindings(AppComponent),
+  HTTP_PROVIDERS,
+  ROUTER_PROVIDERS,
   bind(LocationStrategy).toClass(HashLocationStrategy)
 ])
