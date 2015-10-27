@@ -9,6 +9,7 @@ import { ZippyAppComponent } from '../zippyApp/zippyApp-component'
 import { ChildRouterExpComponent } from '../childRouterExp/childRouterExp-component'
 import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-component'
 import { FormToolsComponent } from '../formTools/formTools-component'
+import { FormObservableComponent } from '../formObservable/formObservable-component'
 
 @Component({
   selector: 'app',
@@ -60,6 +61,11 @@ import { FormToolsComponent } from '../formTools/formTools-component'
     path: '/formTools',
     as: 'FormTools',
     component: FormToolsComponent
+  },
+  {
+    path: '/formObservable',
+    as: 'FormObservable',
+    component: FormObservableComponent
   }
 ])
 export class AppComponent { }
