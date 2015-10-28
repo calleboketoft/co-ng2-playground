@@ -1,13 +1,16 @@
 import { Component } from 'angular2/angular2'
-import { SomeInput } from './someInput'
+import { SomeInput } from './viewChildExp/someInput'
+import { QueryExp } from './queryExp/queryExp'
 
 @Component({
   selector: 'cmp-features',
   template: `
     <h3>Component Features</h3>
     <some-input mytext="mysterious" wadda="hej"></some-input>
+    <br>
+    <query-exp></query-exp>
   `,
-  directives: [SomeInput]
+  directives: [SomeInput, QueryExp]
 })
 export class CmpFeaturesExpComponent {
   constructor () {

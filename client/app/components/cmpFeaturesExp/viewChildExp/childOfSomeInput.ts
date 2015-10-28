@@ -10,6 +10,6 @@ export class ChildOfSomeInput {
   }
 
   lasseSays () {
-    alert('hello')
+    console.log('hello')
   }
 }
