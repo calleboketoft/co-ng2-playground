@@ -10,6 +10,7 @@ import { ChildRouterExpComponent } from '../childRouterExp/childRouterExp-compon
 import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-component'
 import { FormToolsComponent } from '../formTools/formTools-component'
 import { FormObservableComponent } from '../formObservable/formObservable-component'
+import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-component'
 
 @Component({
   selector: 'app',
@@ -66,6 +67,11 @@ import { FormObservableComponent } from '../formObservable/formObservable-compon
     path: '/formObservable',
     as: 'FormObservable',
     component: FormObservableComponent
+  },
+  {
+    path: '/cmpFeaturesExp',
+    as: 'CmpFeaturesExp',
+    component: CmpFeaturesExpComponent
   }
 ])
 export class AppComponent { }
