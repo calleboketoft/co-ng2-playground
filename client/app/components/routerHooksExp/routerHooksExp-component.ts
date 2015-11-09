@@ -8,7 +8,7 @@ function getSessionServiceInstance() {
 
 @Component({
   selector: 'router-hooks',
-  template: '<h3>Router Hooks Experiment</h3>'
+  template: '<h3>Router Hooks</h3>'
 })
 @CanActivate(() => {
   // DI in here: https://github.com/angular/angular/issues/4112
