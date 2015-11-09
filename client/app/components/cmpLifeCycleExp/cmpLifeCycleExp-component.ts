@@ -2,7 +2,7 @@ import { Component } from 'angular2/angular2'
 
 @Component({
   selector: 'cmp-life-cycle',
-  template: '<h3>Component Life Cycle Experiment</h3>'
+  template: '<h3>Component Life Cycle</h3>'
 })
 export class CmpLifeCycleExpComponent {
   constructor () {

@@ -3,7 +3,7 @@ import { Http } from 'angular2/http'
 
 @Component({
   selector: 'http-exp',
-  template: '<h3>Http Experiment</h3>'
+  template: '<h3>Http</h3>'
 })
 export class HttpExpComponent {
   constructor (http: Http) { // Why the manual @Inject(Http) here?
