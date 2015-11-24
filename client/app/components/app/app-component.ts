@@ -12,6 +12,7 @@ import { FormToolsComponent } from '../formTools/formTools-component'
 import { FormObservableComponent } from '../formObservable/formObservable-component'
 import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-component'
 import { DecoratorsCmp } from '../decorators/decorators-cmp'
+import { EventEmitterCmp } from '../eventEmitter/eventEmitter-cmp'
 
 @Component({
   selector: 'app',
@@ -73,6 +74,11 @@ import { DecoratorsCmp } from '../decorators/decorators-cmp'
     path: '/decorators',
     as: 'Decorators',
     component: DecoratorsCmp
+  },
+  {
+    path: '/eventEmitter',
+    as: 'EventEmitter',
+    component: EventEmitterCmp
   }
 ])
 export class AppComponent { }
