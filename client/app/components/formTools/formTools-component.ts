@@ -1,8 +1,8 @@
-import { Component } from 'angular2/angular2'
+import { Component, FORM_DIRECTIVES } from 'angular2/angular2'
 import { CoTagsComponent } from './coTags/coTags-component'
 
 @Component({
-  directives: [CoTagsComponent],
+  directives: [CoTagsComponent, FORM_DIRECTIVES],
   selector: 'form-tools',
   templateUrl: 'app/components/formTools/formTools-component.html'
 })

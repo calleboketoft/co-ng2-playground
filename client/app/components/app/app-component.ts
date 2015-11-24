@@ -44,11 +44,6 @@ import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-compon
     component: FormsExpComponent
   },
   {
-    path: '/zippyApp',
-    as: 'ZippyApp',
-    component: ZippyAppComponent
-  },
-  {
     path: '/childRouterExp/...',
     as: 'ChildRouterExp',
     component: ChildRouterExpComponent

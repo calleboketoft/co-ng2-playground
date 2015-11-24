@@ -28,7 +28,7 @@
     },
     "dependencies": {
       "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.2",
-      "angular2": "npm:angular2@^2.0.0-alpha.45",
+      "angular2": "npm:angular2@^2.0.0-alpha.46",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
       "zone.js": "npm:zone.js@^0.5.8"
     },
@@ -37,6 +37,7 @@
     }
   },
   "devDependencies": {
+    "angular2": "^2.0.0-alpha.46",
     "bootstrap": "git+https://git@github.com/twbs/bootstrap.git#v4.0.0-alpha",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4"

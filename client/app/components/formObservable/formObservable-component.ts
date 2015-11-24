@@ -25,7 +25,6 @@ export class FormObservableComponent {
 
   onInit () {
     this.name.valueChanges
-      .toRx()
       .debounceTime(200)
       .subscribe(something => {
         console.log(something)
