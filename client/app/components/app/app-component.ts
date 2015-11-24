@@ -11,6 +11,7 @@ import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-
 import { FormToolsComponent } from '../formTools/formTools-component'
 import { FormObservableComponent } from '../formObservable/formObservable-component'
 import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-component'
+import { DecoratorsCmp } from '../decorators/decorators-cmp'
 
 @Component({
   selector: 'app',
@@ -67,6 +68,11 @@ import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-compon
     path: '/cmpFeaturesExp',
     as: 'CmpFeaturesExp',
     component: CmpFeaturesExpComponent
+  },
+  {
+    path: '/decorators',
+    as: 'Decorators',
+    component: DecoratorsCmp
   }
 ])
 export class AppComponent { }
