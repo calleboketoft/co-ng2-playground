@@ -38,10 +38,8 @@ export class ModelDrivenFormComponent {
 
   onInit () {
     // Observe all changes to form, reminds me of $watch
-    this.form.valueChanges.observer({
-      next: (value) => {
-        console.log("form changed to: ", value);
-      }
+    this.form.valueChanges.subscribe((value) => {
+      console.log("form changed to: ", value);
     })
   }
 
