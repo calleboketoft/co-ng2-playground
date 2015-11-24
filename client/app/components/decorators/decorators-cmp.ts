@@ -1,3 +1,5 @@
+// http://blog.wolksoftware.com/decorators-reflection-javascript-typescript
+
 import { Component } from 'angular2/angular2'
 
 function methodDecorator (target, key, descriptor) {
