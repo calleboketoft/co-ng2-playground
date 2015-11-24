@@ -1,14 +1,5 @@
 import { Component } from 'angular2/angular2'
 
-function classDecorator (target) {
-  target.whois = 'Prepared'
-
-}
-function classFactoryDecorator (itemName) {
-  return function (target) {
-    target.itemName = itemName
-  }
-}
 function methodDecorator (target, key, descriptor) {
 
   // preserve the original method
@@ -56,12 +47,38 @@ function propertyDecorator (target, key) {
   }
 }
 
+function classDecorator(target: any) {
+
+  // save a reference to the original constructor
+  var original = target
+
+  // a utility function to generate instances of a class
+  function construct (constructor, args) {
+    var c : any = function () {
+      return constructor.apply(this, args)
+    }
+    c.prototype = constructor.prototype
+    return new c()
+  }
+
+  // the new constructor behaviour
+  var f : any = function (...args) {
+    console.log('New: ' + original.name);
+    return construct(original, args)
+  }
+
+  // copy prototype so intanceof operator still works
+  f.prototype = original.prototype
+
+  // return new constructor (will override original)
+  return f
+}
+
 @Component({
   selector: 'decorators-cmp',
   templateUrl: 'app/components/decorators/decorators-cmp.html'
 })
 @classDecorator
-@classFactoryDecorator('Nisse')
 export class DecoratorsCmp {
 
   @propertyDecorator
@@ -70,12 +87,7 @@ export class DecoratorsCmp {
   constructor () {
     console.log('initializing')
   }
-  getPreparedName () {
-    console.log(DecoratorsCmp.whois)
-  }
-  getFactoryName () {
-    console.log(DecoratorsCmp.itemName)
-  }
+
   @methodDecorator
   decorateMe (inputVal) {
     console.log(inputVal)
