@@ -22,7 +22,7 @@ System.config({
   },
 
   map: {
-    "@reactivex/rxjs": "npm:@reactivex/rxjs@5.0.0-alpha.7",
+    "@reactivex/rxjs": "npm:@reactivex/rxjs@5.0.0-alpha.10",
     "angular2": "npm:angular2@2.0.0-alpha.46",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "typescript": "npm:typescript@1.6.2",
@@ -59,6 +59,11 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "npm:@reactivex/rxjs@5.0.0-alpha.10": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "module": "github:jspm/nodelibs-module@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:@reactivex/rxjs@5.0.0-alpha.7": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
