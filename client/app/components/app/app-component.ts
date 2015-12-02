@@ -5,7 +5,6 @@ import { RouterHooksExpComponent } from '../routerHooksExp/routerHooksExp-compon
 import { CmpInputOutputExpComponent } from '../cmpInputOutputExp/cmpInputOutputExp-component'
 import { CmpLifeCycleExpComponent } from '../cmpLifeCycleExp/cmpLifeCycleExp-component'
 import { FormsExpComponent } from '../formsExp/formsExp-component'
-import { ZippyAppComponent } from '../zippyApp/zippyApp-component'
 import { ChildRouterExpComponent } from '../childRouterExp/childRouterExp-component'
 import { ServiceInjectionComponent } from '../serviceInjection/serviceInjection-component'
 import { FormToolsComponent } from '../formTools/formTools-component'
@@ -13,7 +12,7 @@ import { FormObservableComponent } from '../formObservable/formObservable-compon
 import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-component'
 import { DecoratorsCmp } from '../decorators/decorators-cmp'
 import { EventEmitterCmp } from '../eventEmitter/eventEmitter-cmp'
-import { ReactiveCmp } from '../reactive/reactive-cmp'
+import { ReactiveBasicCmp } from '../reactiveBasic/reactiveBasic-cmp'
 
 @Component({
   selector: 'app',
@@ -82,9 +81,9 @@ import { ReactiveCmp } from '../reactive/reactive-cmp'
     component: EventEmitterCmp
   },
   {
-    path: '/reactive',
-    as: 'Reactive',
-    component: ReactiveCmp
+    path: '/reactiveBasic',
+    as: 'ReactiveBasic',
+    component: ReactiveBasicCmp
   }
 ])
 export class AppComponent { }

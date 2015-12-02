@@ -4,10 +4,10 @@ import { Component } from 'angular2/angular2'
 import * as Rx from '@reactivex/rxjs'
 
 @Component({
-  selector: 'reactive-cmp',
-  templateUrl: 'app/components/reactive/reactive-cmp.html'
+  selector: 'reactive-basic-cmp',
+  templateUrl: 'app/components/reactiveBasic/reactiveBasic-cmp.html'
 })
-export class ReactiveCmp {
+export class ReactiveBasicCmp {
 
   // placeholder for the observer
   observer
