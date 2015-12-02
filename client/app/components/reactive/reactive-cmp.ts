@@ -1,6 +1,6 @@
 // @reactivex/rxjs
 
-import { Component, EventEmitter } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
 import * as Rx from '@reactivex/rxjs'
 
 @Component({
@@ -9,20 +9,33 @@ import * as Rx from '@reactivex/rxjs'
 })
 export class ReactiveCmp {
 
-  clickEventEmitter = new EventEmitter();
-  constructor () {
-    // Video 02
-    var clickStream = this.clickEventEmitter
-    // clickStream.subscribe((val) => console.log(val))
+  // placeholder for the observer
+  observer
 
-    clickStream.forEach((val) => {
-      console.log(val)
-      return val
+  setUp () {
+    // Create a new Observable
+    var source = Rx.Observable.create((observer) => {
+      // Attach the observer to the class
+      this.observer = observer
+      // Return complete function of observable
+      return () => {
+        console.log('completing: ' + this.i)
+      }
+    })
+
+    source.subscribe((x) => {
+      console.log(x)
     })
   }
 
-  clickEvent () {
-    this.clickEventEmitter.next('clix')
+  i = 0;
+  sendToObserver () {
+    this.observer.next('next: ' + this.i)
+    this.i++
+  }
+
+  finalize () {
+    this.observer.complete()
   }
 
   // Video 01

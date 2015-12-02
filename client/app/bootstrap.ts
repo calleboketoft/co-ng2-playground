@@ -14,3 +14,7 @@ bootstrap(AppComponent, [
   RecursiveService,
   bind(LocationStrategy).toClass(HashLocationStrategy)
 ])
+
+setTimeout(() => {
+  console.clear()
+}, 1000)
