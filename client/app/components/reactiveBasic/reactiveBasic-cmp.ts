@@ -26,6 +26,8 @@ export class ReactiveBasicCmp {
     source.subscribe((x) => {
       console.log(x)
     })
+
+    console.log('Set up done')
   }
 
   i = 0;

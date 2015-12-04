@@ -13,6 +13,7 @@ import { CmpFeaturesExpComponent } from '../cmpFeaturesExp/cmpFeaturesExp-compon
 import { DecoratorsCmp } from '../decorators/decorators-cmp'
 import { EventEmitterCmp } from '../eventEmitter/eventEmitter-cmp'
 import { ReactiveBasicCmp } from '../reactiveBasic/reactiveBasic-cmp'
+import { ReactiveExpCmp } from '../reactiveExp/reactiveExp-cmp'
 
 @Component({
   selector: 'app',
@@ -84,6 +85,11 @@ import { ReactiveBasicCmp } from '../reactiveBasic/reactiveBasic-cmp'
     path: '/reactiveBasic',
     as: 'ReactiveBasic',
     component: ReactiveBasicCmp
+  },
+  {
+    path: '/reactiveExp',
+    as: 'ReactiveExp',
+    component: ReactiveExpCmp
   }
 ])
 export class AppComponent { }
