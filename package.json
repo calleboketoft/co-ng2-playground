@@ -10,7 +10,6 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
-    "jspm": "^0.16.11",
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
@@ -27,8 +26,7 @@
       "baseURL": "client"
     },
     "dependencies": {
-      "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.10",
-      "angular2": "npm:angular2@^2.0.0-alpha.47",
+      "angular2": "npm:angular2@^2.0.0-alpha.50",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
       "zone.js": "npm:zone.js@^0.5.8"
     },
@@ -37,9 +35,15 @@
     }
   },
   "devDependencies": {
-    "angular2": "^2.0.0-alpha.46",
+    "angular2": "^2.0.0-alpha.50",
     "bootstrap": "git+https://git@github.com/twbs/bootstrap.git#v4.0.0-alpha",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "jspm": "^0.16.15",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-alpha.14",
+    "zone.js": "^0.5.8"
   }
 }
