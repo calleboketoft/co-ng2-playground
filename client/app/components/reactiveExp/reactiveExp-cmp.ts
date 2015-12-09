@@ -1,4 +1,4 @@
-import { Component } from 'angular2/angular2'
+import { Component, EventEmitter } from 'angular2/angular2'
 import * as Rx from '@reactivex/rxjs'
 
 @Component({
@@ -8,25 +8,16 @@ import * as Rx from '@reactivex/rxjs'
 export class ReactiveExpCmp {
   observer
   constructor () {
-    var clickStream = Rx.Observable.create((observer) => {
+    var source = Rx.Observable.create((observer) => {
       this.observer = observer
     })
 
-    clickStream.subscribe((x) => {
+    source.subscribe((x) => {
       console.log(x)
-    })
-
-    var doubleClickStream = clickStream
-      .buffer(() => clickStream.throttle(250))
-      .map(arr => arr.length)
-      .filter(len => len === 2)
-
-    doubleClickStream.subscribe((x) => {
-      console.log('double click!')
     })
   }
 
   clickHandler () {
-    this.observer.next('click')
+    this.observer.next('clicked')
   }
 }
