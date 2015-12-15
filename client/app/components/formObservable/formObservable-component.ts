@@ -4,7 +4,7 @@ import {
   FormBuilder,
   ControlGroup,
   Control
-} from 'angular2/angular2'
+} from 'angular2/core'
 
 @Component({
   selector: 'form-observable',

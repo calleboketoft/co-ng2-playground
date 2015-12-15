@@ -1,4 +1,4 @@
-import { Component } from 'angular2/angular2'
+import { Component } from 'angular2/core'
 import { TemplateDrivenFormComponent } from './templateDrivenForm/templateDrivenForm-component'
 import { ModelDrivenFormComponent } from './modelDrivenForm/modelDrivenForm-component'
 

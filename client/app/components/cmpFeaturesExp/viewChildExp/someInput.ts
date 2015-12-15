@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild, ElementRef } from 'angular2/angular2'
+import { Component, Input, ViewChild, ElementRef } from 'angular2/core'
 import { ChildOfSomeInput } from './childOfSomeInput'
 
 @Component({

@@ -1,7 +1,7 @@
 // @reactivex/rxjs
 
-import { Component } from 'angular2/angular2'
-import * as Rx from '@reactivex/rxjs'
+import { Component } from 'angular2/core'
+import * as Rx from 'rxjs'
 
 @Component({
   selector: 'reactive-basic-cmp',

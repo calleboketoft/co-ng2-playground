@@ -1,4 +1,4 @@
-import { Component, Query, QueryList, CORE_DIRECTIVES } from 'angular2/angular2'
+import { Component, Query, QueryList, CORE_DIRECTIVES } from 'angular2/core'
 
 // https://angular.io/docs/ts/latest/api/core/Query-var.html
 

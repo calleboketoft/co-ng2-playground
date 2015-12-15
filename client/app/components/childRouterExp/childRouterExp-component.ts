@@ -1,4 +1,4 @@
-import { Component } from 'angular2/angular2'
+import { Component } from 'angular2/core'
 import { ROUTER_DIRECTIVES, RouteConfig, Router } from 'angular2/router'
 
 import { DumdumComponent } from './dumdum/dumdum-component'

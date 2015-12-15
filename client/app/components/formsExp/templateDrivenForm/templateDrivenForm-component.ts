@@ -1,6 +1,6 @@
 // NOTE: Template driven forms are NOT preferred
 
-import { Component, FORM_DIRECTIVES } from 'angular2/angular2'
+import { Component, FORM_DIRECTIVES } from 'angular2/core'
 
 @Component({
   selector: 'template-driven-form',

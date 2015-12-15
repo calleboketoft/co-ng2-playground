@@ -1,4 +1,4 @@
-import { Component, Injector } from 'angular2/angular2'
+import { Component, Injector } from 'angular2/core'
 import { CanActivate, CanDeactivate, OnActivate, OnDeactivate } from 'angular2/router'
 import { SessionService } from './SessionService'
 
