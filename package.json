@@ -26,13 +26,13 @@
       "baseURL": "client"
     },
     "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-alpha.53",
+      "angular2": "npm:angular2@^2.0.0-beta.0",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
       "rxjs": "npm:rxjs@^5.0.0-beta.0",
-      "zone.js": "npm:zone.js@^0.5.8"
+      "zone.js": "npm:zone.js@^0.5.10"
     },
     "devDependencies": {
-      "typescript": "npm:typescript@^1.6.2"
+      "typescript": "npm:typescript@^1.7.5"
     }
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "gulp-sass": "^2.0.4",
     "jspm": "^0.16.15",
     "reflect-metadata": "^0.1.2",
-    "rxjs": "^5.0.0-alpha.14",
-    "zone.js": "^0.5.8"
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
   }
 }

@@ -23,11 +23,11 @@ System.config({
 
   map: {
     "@reactivex/rxjs": "npm:@reactivex/rxjs@5.0.0-alpha.10",
-    "angular2": "npm:angular2@2.0.0-alpha.53",
+    "angular2": "npm:angular2@2.0.0-beta.0",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
-    "typescript": "npm:typescript@1.7.3",
-    "zone.js": "npm:zone.js@0.5.8",
+    "typescript": "npm:typescript@1.7.5",
+    "zone.js": "npm:zone.js@0.5.10",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -66,14 +66,14 @@ System.config({
       "module": "github:jspm/nodelibs-module@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:angular2@2.0.0-alpha.53": {
+    "npm:angular2@2.0.0-beta.0": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "es6-promise": "npm:es6-promise@3.0.2",
       "es6-shim": "npm:es6-shim@0.33.13",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "reflect-metadata": "npm:reflect-metadata@0.1.2",
-      "rxjs": "npm:rxjs@5.0.0-alpha.14",
-      "zone.js": "npm:zone.js@0.5.8"
+      "rxjs": "npm:rxjs@5.0.0-beta.0",
+      "zone.js": "npm:zone.js@0.5.10"
     },
     "npm:asn1.js@4.2.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -285,10 +285,6 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:rxjs@5.0.0-alpha.14": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:rxjs@5.0.0-beta.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -314,7 +310,7 @@ System.config({
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
     },
-    "npm:zone.js@0.5.8": {
+    "npm:zone.js@0.5.10": {
       "es6-promise": "npm:es6-promise@3.0.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
