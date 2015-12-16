@@ -13,4 +13,4 @@ bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
   RecursiveService,
   bind(LocationStrategy).toClass(HashLocationStrategy)
-])
+]).catch(err => console.error(err))

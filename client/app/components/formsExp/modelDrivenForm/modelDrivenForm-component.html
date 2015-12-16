@@ -1,21 +1,21 @@
 <h3>Model driven form</h3>
 
-<form [ng-form-model]="form" (ng-submit)="onSubmit()">
+<form [ngFormModel]="form" (ngSubmit)="onSubmit()">
   <div class="row">
     <div class="col-xs-12">
       <label>Name:</label>
-      <input type="text" class="form-control" ng-control="name">
+      <input type="text" class="form-control" ngControl="name">
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
       <label>Password:</label>
-      <input type="password" class="form-control" ng-control="password">
+      <input type="password" class="form-control" ngControl="password">
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <div *ng-if="!form.valid">
+      <div *ngIf="!form.valid">
         Invalid
       </div>
     </div>

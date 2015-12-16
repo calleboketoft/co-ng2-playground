@@ -1,20 +1,24 @@
 import {
   Component,
+  Inject,
+  OnInit
+} from 'angular2/core'
+
+import {
   CORE_DIRECTIVES,
   FORM_DIRECTIVES,
   FormBuilder,
   ControlGroup,
   Control,
-  Validators,
-  Inject
-} from 'angular2/core'
+  Validators
+} from 'angular2/common'
 
 @Component({
   selector: 'model-driven-form',
   templateUrl: 'app/components/formsExp/modelDrivenForm/modelDrivenForm-component.html',
   directives: [FORM_DIRECTIVES, CORE_DIRECTIVES]
 })
-export class ModelDrivenFormComponent {
+export class ModelDrivenFormComponent implements OnInit {
 
   form: ControlGroup
 
@@ -36,7 +40,7 @@ export class ModelDrivenFormComponent {
     }
   }
 
-  onInit () {
+  ngOnInit () {
     // Observe all changes to form, reminds me of $watch
     this.form.valueChanges.subscribe((value) => {
       console.log("form changed to: ", value);
