@@ -9,11 +9,11 @@ export class CmpLifeCycleExpComponent implements OnInit, OnDestroy {
     console.log('life cycle')
   }
 
-  ngOnInit () {
+  public ngOnInit () {
     console.log('on init')
   }
 
-  ngOnDestroy () {
+  public ngOnDestroy () {
     console.log('on destroy')
   }
 }

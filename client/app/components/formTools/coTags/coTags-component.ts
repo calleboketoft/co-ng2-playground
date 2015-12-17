@@ -1,17 +1,16 @@
-import { Component } from 'angular2/core'
+import { Component, OnInit, Input } from 'angular2/core'
 import { NgFor } from 'angular2/common'
 
 @Component({
   selector: 'co-tags',
   templateUrl: 'app/components/formTools/coTags/coTags-component.html',
-  inputs: ['tags'],
   directives: [NgFor]
 })
-export class CoTagsComponent {
+export class CoTagsComponent implements OnInit {
 
-  tags
+  @Input() tags
 
-  onInit () {
+  public ngOnInit () {
     console.log(this.tags)
   }
 

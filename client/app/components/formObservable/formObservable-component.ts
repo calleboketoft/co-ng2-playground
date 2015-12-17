@@ -1,10 +1,13 @@
 import {
-  Component,
+  Component
+} from 'angular2/core'
+
+import {
   FORM_DIRECTIVES,
   FormBuilder,
   ControlGroup,
   Control
-} from 'angular2/core'
+} from 'angular2/common'
 
 @Component({
   selector: 'form-observable',
@@ -23,7 +26,7 @@ export class FormObservableComponent {
     })
   }
 
-  onInit () {
+  ngOnInit () {
     this.name.valueChanges
       .debounceTime(200)
       .subscribe(something => {

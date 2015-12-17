@@ -8,7 +8,7 @@ import { SomeService } from 'app/components/serviceInjection/SomeService'
 })
 export class ServiceInjectionComponent {
   constructor (someService: SomeService) {
-    console.log ('Service Dependency Injection Component Init')
-    console.log('Using SomeService: ', someService.myValue)
+    console.log ('serviceInjection-component.ts constructor')
+    console.log('someService.myValue: ', someService.myValue)
   }
 }

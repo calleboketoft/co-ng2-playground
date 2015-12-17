@@ -5,9 +5,8 @@ import { RecursiveService } from './RecursiveService'
 
 @Injectable()
 export class SomeService {
-  constructor (http:Http, recursiveService:RecursiveService) {
-    console.log('SomeService started, note that this is not a singleton')
-    console.log(http)
+  constructor (recursiveService:RecursiveService) {
+    console.log('someService constructor')
     console.log(recursiveService.something)
     this.myValue = 'Calle'
     if (esmSingleton.singletonDataHere) {

@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "This is the place for your application front-end files.",
   "main": "config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "angular2": "^2.0.0-alpha.46"
+    "angular2": "^2.0.0-beta.0"
   }
 }
