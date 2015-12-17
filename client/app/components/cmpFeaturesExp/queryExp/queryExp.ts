@@ -1,4 +1,5 @@
-import { Component, Query, QueryList, CORE_DIRECTIVES } from 'angular2/core'
+import { Component, Query, QueryList } from 'angular2/core'
+import { CORE_DIRECTIVES } from 'angular2/common'
 
 // https://angular.io/docs/ts/latest/api/core/Query-var.html
 
@@ -15,7 +16,7 @@ class Pane {
   directives: [CORE_DIRECTIVES],
   template: `
     <ul>
-      <li *ng-for="#pane of panes">{{pane.title}}</li>
+      <li *ngFor="#pane of panes">{{pane.title}}</li>
     </ul>
     <content></content>
   `
