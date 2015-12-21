@@ -91,11 +91,11 @@ export class DecoratorsCmp {
   }
 
   @methodDecorator
-  decorateMe (inputVal) {
+  public decorateMe (inputVal) {
     console.log(inputVal)
   }
 
-  touchPropertyDecorator (newVal) {
+  public touchPropertyDecorator (newVal) {
     this.decorateProp = newVal
   }
 }
