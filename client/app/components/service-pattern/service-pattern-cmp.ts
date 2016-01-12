@@ -2,6 +2,7 @@ import {Component} from 'angular2/core'
 import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router'
 import {BobCmp} from './kids/bob-cmp'
 import {AliceCmp} from './kids/alice-cmp'
+import {AppApiService} from './services/app-api-service'
 
 @Component({
   selector: 'service-pattern',
@@ -11,25 +12,15 @@ import {AliceCmp} from './kids/alice-cmp'
     <br><br>
     <router-outlet></router-outlet>
   `,
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES],
+  providers: [AppApiService]  // registering the provider here makes it instantiate with this
+                              // component and its children will get the same instance upon
+                              // dependency injection
 })
 @RouteConfig([
-  {path: '/bob',    as: 'Bob',    component: BobCmp, useAsDefault: true},
+  {path: '/bob',    as: 'Bob',    component: BobCmp,    useAsDefault: true},
   {path: '/alice',  as: 'Alice',  component: AliceCmp}
 ])
 export class ServicePatternCmp {
-  constructor (private router: Router) {}
-
-  go (place) {
-    switch(place) {
-      case 'bob':
-        console.log('go bob!')
-        break
-      case 'alice':
-        console.log('go alice!')
-        break
-      default:
-        break
-    }
-  }
+  private appApiService:AppApiService // Instantiate the appApiService
 }
