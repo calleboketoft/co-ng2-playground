@@ -1,7 +1,7 @@
 import { Injectable } from 'angular2/core'
 import { Http } from 'angular2/http'
-import esmSingleton from './esmSingleton'
-import { RecursiveService } from './RecursiveService'
+import esmSingleton from './esm-singleton'
+import { RecursiveService } from './recursive-service'
 
 @Injectable()
 export class SomeService {
