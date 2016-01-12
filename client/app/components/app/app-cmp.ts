@@ -14,6 +14,7 @@ import { DecoratorsCmp } from '../decorators/decorators-cmp'
 import { EventEmitterCmp } from '../event-emitter/event-emitter-cmp'
 import { ReactiveBasicCmp } from '../reactive-basic/reactive-basic-cmp'
 import { ReactiveExpCmp } from '../reactive-exp/reactive-exp-cmp'
+import { ServicePatternCmp } from '../service-pattern/service-pattern-cmp'
 
 @Component({
   selector: 'app',
@@ -90,6 +91,11 @@ import { ReactiveExpCmp } from '../reactive-exp/reactive-exp-cmp'
     path: '/reactiveExp',
     as: 'ReactiveExp',
     component: ReactiveExpCmp
+  },
+  {
+    path: '/service-pattern/...',
+    as: 'ServicePattern',
+    component: ServicePatternCmp
   }
 ])
 export class AppCmp { }
