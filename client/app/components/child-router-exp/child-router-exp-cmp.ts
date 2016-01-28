@@ -22,6 +22,7 @@ import { BabyCmp } from './baby/baby-cmp'
   }
 ])
 export class ChildRouterExpCmp {
+  router
   constructor (router: Router) {
     this.router = router
   }
